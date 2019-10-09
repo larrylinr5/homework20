@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script>
+        var ans="";
+
+        function init()
+        {
+            $('#b1').click(function(){
+                ans=ans+"1";
+                anstext();
+                
+            });
+            $('#b2').click(function(){
+                ans+=2;
+                anstext();
+            });
+            $('#b3').click(function(){
+                ans+=3;
+                anstext();
+            });
+            $('#b4').click(function(){
+                ans+=4;
+                anstext();
+            });
+            $('#b5').click(function(){
+                ans+=5;
+                anstext();
+            });
+            $('#b6').click(function(){
+                ans+=6;
+                anstext();
+            });
+            $('#b7').click(function(){
+                ans+=7;
+                anstext();
+            });
+            $('#b8').click(function(){
+                ans+=8;
+                anstext();
+            });
+            $('#b9').click(function(){
+                ans+=9;
+                anstext();
+            });
+            $('#b0').click(function(){
+                ans+=0;
+                anstext();
+            });
+            $('#ba').click(function(){
+                ans="";
+                anstext();
+            });
+            $('#bb').click(function(){
+                ans+="(";
+                anstext();
+            });
+            $('#bc').click(function(){
+                ans+=")";
+                anstext();
+            });
+            $('#bd').click(function(){
+                ans+="/";
+            });
+            $('#be').click(function(){
+                ans+="*";
+                anstext();
+            });
+            $('#bf').click(function(){
+                ans+="-";
+                anstext();
+            });
+            $('#bg').click(function(){
+                ans+="+";
+                anstext();
+            });
+            $('#bh').click(function(){
+                ans+=".";
+                anstext();
+            });
+            $('#bi').click(function(){
+                var aaa=ans;
+                ans=eval(aaa);
+                anstext();
+            });
+        }
+        function anstext()
+        {
+            
+            $('#theans').val(ans);
+        }
+        
+        $(function () {
+            init();
+        });
+    </script>
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <input type="text" id="theans" style="margin-top: 30px; width: 250px;">
+        </div>
+        <div class="row full" style=" width: 250px;" >
+            <div class="col-3"><button id="ba" class="btn btn-primary" style="width: 60px">AC</button></div>
+            <div class="col-3"><button id="bb" class="btn btn-primary">(</button></div>
+            <div class="col-3"><button id="bc" class="btn btn-primary">)</button></div>
+            <div class="col-3"><button id="bd" class="btn btn-primary">/</button></div>
+            <div class="col-3"><button id="b7" class="btn btn-primary">7</button></div>
+            <div class="col-3"><button id="b8" class="btn btn-primary">8</button></div>
+            <div class="col-3"><button id="b9" class="btn btn-primary">9</button></div>
+            <div class="col-3"><button id="be" class="btn btn-primary">*</button></div>
+            <div class="col-3"><button id="b4" class="btn btn-primary">4</button></div>
+            <div class="col-3"><button id="b5" class="btn btn-primary">5</button></div>
+            <div class="col-3"><button id="b6" class="btn btn-primary">6</button></div>
+            <div class="col-3"><button id="bf" class="btn btn-primary">-</button></div>
+            <div class="col-3"><button id="b1" class="btn btn-primary">1</button></div>
+            <div class="col-3"><button id="b2" class="btn btn-primary">2</button></div>
+            <div class="col-3"><button id="b3" class="btn btn-primary">3</button></div>
+            <div class="col-3"><button id="bg" class="btn btn-primary">+</button></div>
+            <div class="col-3"><button id="b0" class="btn btn-primary">0</button></div>
+            <div class="col-3"><button id="bh" class="btn btn-primary">.</button></div>
+            <div class="col-6"><button id="bi" class="btn btn-primary">=</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

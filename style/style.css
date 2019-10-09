@@ -1,0 +1,10 @@
+.full button {
+  width: 100%;
+  height: 100%;
+}
+
+.full .col-3,
+.col-6 {
+  margin-top: 3px;
+}
+/*# sourceMappingURL=style.css.map */
